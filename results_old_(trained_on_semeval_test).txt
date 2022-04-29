@@ -1,0 +1,75 @@
+## Counts
+
+Train
+{'positive': 935, 'negative': 333, 'neutral': 1039}
+Gu
+{'positive': 119, 'negative': 179, 'neutral': 175}
+Getting tokens...
+Splitting
+Train
+{'positive': 114, 'negative': 160, 'neutral': 152}
+Test
+{'positive': 5, 'negative': 19, 'neutral': 23}
+
+## Model results
+
+In-domain:
+
+name,accuracy,f1,precision,recall
+Multinomial Unigram*/Sentiwordnet*,0.6809,0.6408,0.6630,0.6752
+Multinomial Unigram*/Trigram*/Sentiwordnet*,0.6809,0.5778,0.7884,0.5709
+Multinomial Unigram*/Bigram*/Sentiwordnet*,0.6809,0.6272,0.6958,0.6230
+Multinomial Unigram*/Bigram*/Trigram*/Sentiwordnet*,0.6809,0.6456,0.7902,0.6230
+Multinomial Unigram*,0.6596,0.6369,0.6736,0.7129
+Multinomial Unigram*/Trigram*,0.6596,0.5869,0.6095,0.6085
+Multinomial Trigram*/Sentiwordnet*,0.6383,0.4492,0.4274,0.4836
+Multinomial Bigram*/Trigram*/Sentiwordnet*,0.6383,0.5440,0.7625,0.5419
+Multinomial Unigram*/Bigram*,0.6383,0.5685,0.5966,0.5941
+Multinomial Unigram*/Bigram*/Trigram*,0.6383,0.5685,0.5966,0.5941
+Multinomial Bigram*/Sentiwordnet*,0.6170,0.4282,0.4157,0.4752
+Multinomial Bigram*/Trigram*,0.5957,0.5237,0.5476,0.5620
+Multinomial Bigram*,0.5532,0.4838,0.5175,0.5330
+Multinomial Trigram*,0.5319,0.4948,0.5332,0.5155
+Multinomial Sentiwordnet*,0.5106,0.4281,0.4602,0.4244
+Best confusion matrix
+[[[18 10]
+  [ 1 18]]
+
+ [[22  2]
+  [12 11]]
+
+ [[39  3]
+  [ 2  3]]]
+
+
+
+
+Out-of-domain:
+
+
+name,accuracy,f1,precision,recall
+Multinomial Sentiwordnet*,0.4397,0.3920,0.5199,0.4261
+Multinomial Unigram*/Trigram*/Sentiwordnet*,0.4249,0.3495,0.2894,0.4698
+Multinomial Unigram*/Bigram*/Sentiwordnet*,0.4249,0.3505,0.2960,0.4725
+Multinomial Unigram*/Bigram*/Trigram*/Sentiwordnet*,0.4249,0.3504,0.2946,0.4698
+Multinomial Unigram*,0.4207,0.3882,0.5230,0.4678
+Multinomial Unigram*/Sentiwordnet*,0.4186,0.3552,0.5145,0.4684
+Multinomial Unigram*/Bigram*/Trigram*,0.4080,0.3404,0.4598,0.4581
+Multinomial Bigram*/Trigram*,0.4059,0.3747,0.5165,0.4257
+Multinomial Unigram*/Bigram*,0.3996,0.3353,0.5105,0.4513
+Multinomial Bigram*,0.3953,0.3655,0.5015,0.4171
+Multinomial Unigram*/Trigram*,0.3932,0.3270,0.6132,0.4430
+Multinomial Bigram*/Trigram*/Sentiwordnet*,0.3848,0.3129,0.5845,0.4058
+Multinomial Trigram*/Sentiwordnet*,0.3827,0.2935,0.2438,0.3842
+Multinomial Bigram*/Sentiwordnet*,0.3805,0.3098,0.5821,0.4020
+Multinomial Trigram*,0.3763,0.2634,0.5686,0.3587
+Best confusion matrix
+[[[285   9]
+  [145  34]]
+
+ [[108 190]
+  [ 36 139]]
+
+ [[288  66]
+  [ 84  35]]]
+
